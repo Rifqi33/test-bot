@@ -1,34 +1,5 @@
-/*
-   * Maaf saya ENC   
-      untuk ganti owner dan lain lain, ada di config.js
-      untuk ganti menu ada di language -> menunya.js
-   * Beberapa fitur yang saya tidak munculkan di All menu :
-     -Hackfb ( cuman fake hack )
-     -spamwa ( spam otp wa )
-     -spamsms ( spam otp sms biasa )
-     -call ( spam telepon )
-     -hdin ( buat hd in gambar (tapi ga tau berubah apa ga) )
-     -culik ( buat nyulik member lain ke grup kami (tapi ga tau berhasil apa ga) )
-   * Beberapa Fitur yang sering error :
-     - Ig Downloader
-     - Fb Downloader
-
-     - Twitter Downloader     
-   * Create By Dika Ardnt.
-      Contact Me on wa.me/6288292024190
-
-
-      Follow https://github.com/DikaArdnt
-   * Update By : Fakhri Awail  
-      Contact Me on wa : wa.me/6281319868981
-      Follow My github : https://github.com/FakhriGansz    
-
-
-
-*/
-
 require('./config')
-const { default: wxpConnect, useSingleFileAuthState, DisconnectReason, fetchLatestBaileysVersion, generateForwardMessageContent, prepareWAMessageMedia, generateWAMessageFromContent, generateMessageID, downloadContentFromMessage, makeInMemoryStore, jidDecode, proto } = require("@adiwajshing/baileys")
+const { default: nazeConnect, useSingleFileAuthState, DisconnectReason, fetchLatestBaileysVersion, generateForwardMessageContent, prepareWAMessageMedia, generateWAMessageFromContent, generateMessageID, downloadContentFromMessage, makeInMemoryStore, jidDecode, proto } = require("@adiwajshing/baileys")
 const { state, saveState } = useSingleFileAuthState(`./${sessionName}.json`)
 const pino = require('pino')
 const fs = require('fs')
